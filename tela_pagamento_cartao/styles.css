@@ -1,0 +1,185 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'JetBrains', sans-serif; /* Use 'JetBrains' como a fonte principal e fallback para sans-serif caso não esteja disponível */
+
+}
+/* Estilos para o formulário de pagamento */
+.form-payment {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 10px;
+    width: 400px;
+    height: 440px;
+    border: 1px solid #cecece;
+}
+.form-payment .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilos para os títulos dentro do formulário */
+h1 {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+/* Estilos para os parágrafos dentro do formulário */
+.form-payment p {
+    margin: 0;
+    font-size: 13px;
+    opacity: 60%;
+    font-weight: 100;
+}
+
+/* Estilos para a seção de pagamento */
+.payment {
+    padding: 20px;
+    width: 89%;
+    background-color: rgb(236, 236, 250);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para os logos de cartão */
+#cardLogos img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+/* Estilos para os botões */
+.btns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.btn-1, .btn-2 {
+    width: 188px;
+    height: 38px;
+    font-size: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-1 {
+    background-color: transparent;
+    color: #1976D1;
+    border: 2px solid #1976D1;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+.btn-2 {
+    background-color: #1976D1;
+    color: #f3f3f3;
+    border: none;
+    font-weight: bold;
+}
+
+/* Estilos para as colunas de pagamento */
+.payment-coluna {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-coluna input {
+    border-radius: 7px;
+    width: 93%;
+    height: 35px;
+    padding-left: 10px;
+    border: none;
+    font-size: 13px;
+}
+
+.payment-coluna input::placeholder {
+    font-size: 13px;
+    color: #0000006e;
+}
+
+/* Estilos para o campo de nome */
+.name {
+    width: 97%;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 7px;
+    border: none;
+    font-size: 13px;
+}
+
+.name::placeholder {
+    font-size: 13px;
+    color: #0000006e;
+}
+
+/* Estilos para os labels */
+label {
+    font-size: 13px;
+    font-weight: 200;
+    color: #494949;
+}
+
+/* Estilos para o campo de número do cartão */
+.input-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
+
+#numero_cartao {
+    background-color: transparent;
+    width: 90%;
+    height: 100%;
+    outline: none;
+    padding-left: 10px;
+    font-size: 13px;
+    border: none;
+}
+
+#numero_cartao::placeholder {
+    font-size: 13px;
+    color: #0000006e;
+}
+
+/* Estilos para a linha de pagamento */
+.payment-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Estilos para os botões de número */
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
